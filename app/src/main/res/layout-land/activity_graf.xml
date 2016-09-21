@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/activity_bg"
+    tools:context="marcogino.bluemoto.MainActivity"
+    android:layout_centerVertical="true">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="300dp"
+        android:layout_height="250dp"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="@string/Minor"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btPrevDataM"
+        android:layout_toLeftOf="@+id/btPrevData"
+        android:background="@drawable/button_bg"
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="@string/minor"
+        android:padding="10dp"
+        android:layout_toLeftOf="@+id/btPostData"
+        android:layout_margin="10dp"
+        android:id="@+id/btPrevData"
+
+        android:background="@drawable/button_bg"
+
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="@string/major"
+        android:padding="10dp"
+        android:layout_toLeftOf="@+id/btPostDataM"
+        android:layout_margin="10dp"
+        android:id="@+id/btPostData"
+
+        android:background="@drawable/button_bg"
+
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="@string/Major"
+        android:padding="10dp"
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/btPostDataM"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_bg"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Delete DB data"
+        android:padding="10dp"
+        android:id="@+id/btDeleteDBdata"
+        android:background="@drawable/button_bg"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

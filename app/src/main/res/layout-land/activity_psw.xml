@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/activity_bg"
+    tools:ignore="TextFields,HardcodedText" >
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Digita la password con 6 digit" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/label"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:textAlignment="center"
+
+        android:inputType="number"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/password"
+        android:layout_marginTop="30dp"
+
+        android:textAlignment="center"
+        android:background = "@drawable/button_bg"
+        android:layout_marginLeft="10dip"
+        android:text="OK" />
+
+
+
+</RelativeLayout>

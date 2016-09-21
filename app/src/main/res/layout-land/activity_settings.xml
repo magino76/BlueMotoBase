@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+
+android:background="@drawable/activity_bg"
+tools:context="marcogino.bluemoto.MainActivity">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/linearLayout2">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutSpinner"
+    android:layout_marginBottom="10dp"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select target device:"
+        android:layout_gravity="center_vertical"
+        android:textSize="16dp"
+        android:paddingRight="10dp"
+        android:textStyle="bold"
+
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonH"
+        android:id="@+id/spinnerDevice"
+
+        android:longClickable="false"
+
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:id="@+id/timeout"
+    android:layout_below="@+id/layoutSpinner"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:layout_width="@dimen/editText"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopText"
+        android:id="@+id/TimeoutToSend"
+        android:layout_gravity="clip_vertical"
+        android:inputType="number"
+        android:maxLength="3"
+
+        />
+    <Button
+
+        android:layout_width="@dimen/buttonW"
+
+        android:layout_marginTop="@dimen/marginRightButton"
+        android:layout_height="@dimen/buttonH"
+        android:text="@string/btTextSetTimeout"
+        android:id="@+id/btTimeout"
+        android:background = "@drawable/button_bg"
+
+        android:clickable="true"
+        android:onClick="btPressed"/>
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/speed"
+    android:layout_below="@+id/timeout"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:layout_width="@dimen/editText"
+        android:layout_gravity="clip_vertical"
+
+        android:id="@+id/SpeedToSend"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="3"
+        />
+    <Button
+        android:layout_width="@dimen/buttonW"
+        android:layout_marginRight="@dimen/marginRightButton"
+        android:text="@string/btTextSetSpeed"
+        android:id="@+id/btSetSpeed"
+        android:layout_height="@dimen/buttonH"
+        android:background = "@drawable/button_bg"
+        android:onClick="btPressed"/>
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/getsetspeed"
+    android:layout_below="@+id/speed">
+    <Button
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:text="@string/btTextGetSetActualSpeed"
+        android:id="@+id/btGetSetSpeed"
+
+        android:background = "@drawable/button_bg"
+        android:onClick="btPressed"/>
+    <EditText
+        android:layout_width="@dimen/editText"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:maxLength="3"
+        android:id="@+id/SpeedSetted"/>
+</LinearLayout>
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+      >
+
+        <TextView
+            android:layout_width="150dp"
+            android:id="@+id/labelLogging"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text=""
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="OK"
+            android:id="@+id/btOK"
+            android:background = "@drawable/button_bg"
+            android:onClick="btPressed"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:id="@+id/linearLayout4">
+
+
+</LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

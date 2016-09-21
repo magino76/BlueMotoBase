@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BlueMoto Base</string>
+    <string name="btTextSetTimeout">SET Timeout</string>
+    <string name="btTextSetSpeed">SET Speed</string>
+    <string name="btConnetti">Connect</string>
+    <string name="btDisconnetti">Disconnect</string>
+    <string name="btTextGetSetActualSpeed">GetSet Speed</string>
+    <string name="service_started">Service is running</string>
+    <string name="password_required">Password required</string>
+    <string name="btResetSpeedMax">Reset speed</string>
+    <string name="Minor">&lt;&lt; </string>
+    <string name="Major">&gt;&gt;</string>
+    <string name="minor">&lt; </string>
+    <string name="major">&gt;</string>
+
+</resources>

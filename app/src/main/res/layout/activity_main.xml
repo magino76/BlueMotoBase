@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/activity_bg"
+    tools:context="marcogino.bluemoto.MainActivity">
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/viewspeedMax"
+        android:id="@+id/connessione"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="@dimen/buttonW"
+            android:layout_marginTop="@dimen/marginRightButton"
+            android:layout_height="@dimen/buttonH"
+            android:text="@string/btConnetti"
+            android:id="@+id/btConnetti"
+            android:background = "@drawable/button_bg"
+            android:onClick="btPressed"/>
+
+
+        <Button
+
+            android:layout_width="@dimen/buttonW"
+            android:layout_height="@dimen/buttonH"
+            android:text="@string/btDisconnetti"
+            android:id="@+id/btDisconnetti"
+            android:background = "@drawable/button_bg"
+            android:layout_alignTop="@+id/btConnetti"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="btPressed"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+       android:orientation="horizontal"
+       android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20dp"
+
+        android:text="Messaggio..."
+        android:id="@+id/messaggio"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/dataDeviceToConnect"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:text="---"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/connessione"
+        android:layout_centerHorizontal="true" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:text="Target: "
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dataDeviceToConnect"
+        android:layout_alignBottom="@+id/dataDeviceToConnect"
+        android:layout_toLeftOf="@+id/dataDeviceToConnect"
+        android:layout_toStartOf="@+id/dataDeviceToConnect" />
+
+</RelativeLayout>
